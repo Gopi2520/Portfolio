@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gopinath's Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="home">
+        
+      <div class="container">
+        <nav>
+          <img src="images/name_logo.png" class="logo" />
+          
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><i class="fa-brands fa-java"></i>Full-Stack Developer</i></p>
+          <h2>
+            Hii, I'm <span>Gopinath</span><br />
+            Paramasivam From Chennai
+          </h2>
+        </div>
+      </div>
+      
+      </div>
+      <!---------------------------- About ---------------------------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./images/gopi image.jpeg" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="subtitle">About Me</h1>
+              <p>
+                I am a passionate full-stack developer with experience in
+                building web applications using modern technologies. I enjoy
+                solving complex problems and creating intuitive user
+                experiences.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skill
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Backend Development</span><br />Building business
+                    logics and establishing connection between the backend to
+                    database using Java with help of Spring boot, Git&Github
+                    ,Servlets,Hibernate and MySQL
+                  </li>
+                  <li>
+                    <span>Full-Stack Development</span><br />Develop and Deploy
+                    a dynamic web projects
+                  </li>
+                  <li>
+                    <span>Frontend Development</span><br />Creating responsive
+                    and interactive user interfaces
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Experience</span><br />
+                    As a recent graduate, I have completed several projects
+                    <br />
+                    during my academic journey, including a web application for
+                    <br />
+                    managing student records and a personal portfolio website.
+                    <br />
+                    I have also gained practical experience through internships
+                    <br />and freelance work, where I contributed to the <br />
+                    development of web applications and collaborated with <br />
+                    cross-functional teams.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>B.Sc Computer Science</span><br />
+                    Completed a Bachelor of Science in Computer Science <br />
+                    at Madras University, Chennai, India. Graduated with a
+                    <br />
+                    strong academic record and a focus on software development,
+                    <br />
+                    algorithms, and data structures.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <h2>Frontend Development <i class="fa-solid fa-code"></i></h2>
+              <p>
+                Building responsive and interactive websites using modern
+                technologies.
+              </p>
+            </div>
+            <div>
+              <h2>Backend Development <i class="fa-brands fa-java"></i></h2>
+              <p>
+                Building robust and scalable backend systems using Java, Spring
+                Boot, and other modern technologies.
+              </p>
+            </div>
+            <div>
+              <h2>
+                Full-Stack Development <i class="fa-brands fa-docker"></i>
+              </h2>
+              <p>
+                Developing and deploying dynamic web applications from start to
+                finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!---------------------------- Portfolio ---------------------------->
+      
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="layer">
+                <img src="./images/DemoPic.jpg"/>
+                <h2>Frontend Project</h2>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <div class="btn-group">
+                  <input type="button" value="View Project">
+                  <input type="button" value="GitHub Repo">
+                </div>
+                </div>
+                <div class="layer">
+                <img src="./images/DemoPic.jpg"/>
+                <h2>Full-Stack Project</h2>
+                <p>A Dynamic web application for maintaining and managing Employee records.</p>
+                <div class="btn-group">
+                  <input type="button" value="View Project">
+                  <input type="button" value="GitHub Repo">
+                </div>
+                </div>
+                <div class="layer">
+                <img src="./images/DemoPic.jpg" />
+                <h2>Backend Project</h2>
+                <p>A backend system for handling Hospital,Student and Doctors data and processing requests of Each Other.</p>
+                <div class="btn-group">
+                  <input type="button" value="View Project">
+                  <input type="button" value="GitHub Repo">
+                </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+<!---------------------------- Contact ---------------------------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-regular fa-envelope"></i>   gopi27644@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>  +91 9360627061</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gopzz2014"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Gopi2520"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/919360627061"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>   
+              <a href="./images/Gopinath_P_Resume.pdf" download="Gopinath_P_Resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="contact_form">
+                <input type="text" name="Name" placeholder="Your Name" required />
+                <input type="email" name="Email" placeholder="Your Email" required />
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i>  SEND</button>
+                <p id="msg"></p>
+                <div id="loading" style="display:none;"><i class="fa-regular fa-hourglass"></i>Sending...</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Gopzz. Made with <i class="fa-solid fa-heart"></i> gopzz's portfolio</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
