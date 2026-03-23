@@ -356,13 +356,24 @@ form .btn2 {
   color: #ababab;
   font-size: smaller;
 }
+.hidden-project {
+  display: none;
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>for responsive pages >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 nav .fa-solid {
   display: none;
 }
 @media (max-width: 768px) {
   #header {
     background-image: url("./images/vertical_image.png");
+  }
+  nav .fa-solid.fa-bars {
+    color: #fff;
+    font-weight: 900;
+    background-color: rgba(255, 26, 117, 0.7);
+    border-radius: 8%;
+    padding: 3px;
   }
   .header-text {
     margin-top: 100%;
@@ -371,6 +382,28 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
+  nav {
+    position: relative; /* makes nav the positioning context */
+  }
+
+  nav .fa-bars {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* pushes it to the far right */
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav .fa-xmark {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* close icon stays on the left inside menu */
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
   nav .fa-solid {
     display: block;
     font-size: 25px;
@@ -381,8 +414,9 @@ nav .fa-solid {
     background-color: #ff004f;
     position: fixed;
     top: 0;
-    padding-top: 50px;
     right: -200px;
+    padding-top: 50px;
+    z-index: 1000;
   }
   nav ul li {
     display: block;

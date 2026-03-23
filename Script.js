@@ -10,6 +10,7 @@ function opentab(tabName) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabName).classList.add("active-tab");
 }
+
 var sidemenu = document.getElementById("sidemenu");
 function openmenu() {
   sidemenu.style.right = "0";
@@ -29,6 +30,7 @@ form.addEventListener("submit", (e) => {
     .then((response) => response.json())
     .then((response) => {
       loading.style.display = "none";
+      alert("I got your message" + "\n" + "Thank you for Visiting !!");
       msg.innerHTML = "Message sent successfully!";
       setTimeout(function () {
         msg.innerHTML = "";
@@ -41,3 +43,27 @@ form.addEventListener("submit", (e) => {
       console.error("Error!", error.message);
     });
 });
+
+// Toggle See More / Show Less
+const seeMoreBtn = document.getElementById("seeMoreBtn");
+
+if (seeMoreBtn) {
+  seeMoreBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+    if (this.textContent === "See More") {
+      // Show hidden projects
+      hiddenProjects.forEach((project) => {
+        project.style.display = "block";
+      });
+      this.textContent = "Show Less";
+    } else {
+      // Hide projects again
+      hiddenProjects.forEach((project) => {
+        project.style.display = "none";
+      });
+      this.textContent = "See More";
+    }
+  });
+}
