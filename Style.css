@@ -214,6 +214,9 @@ nav ul li a:hover::after {
     background-color 0.5s,
     color 0.5s,
     transform 0.5s;
+  p span {
+    color: darkmagenta;
+  }
 }
 .work-list .layer img {
   width: 100%;
@@ -476,4 +479,7 @@ nav .fa-solid {
   font-size: 14px;
   color: #25d366; /* WhatsApp green */
   margin-top: 10px;
+}
+.layer p span {
+  color: #25d366;
 }
